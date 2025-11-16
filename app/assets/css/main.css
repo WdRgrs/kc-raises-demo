@@ -1,2 +1,18 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+
+:root {
+  /* 
+    https://github.com/nuxt/ui/issues/2332 - cursor on hover overwritten by tailwind
+  */
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+  :disabled {
+    cursor: default;
+  }
+
+  /* --ui-container: 1400px; */
+}
