@@ -8,7 +8,7 @@
     </ClientOnly>
 
     <div>
-      Total Items: {{ data.totalCount }}
+      Total Items: {{ totalCount }}
     </div>
 
     <div class="flex justify-center border-t border-default pt-4">
@@ -44,6 +44,7 @@ import type{ TransformedRaiseItem, TransformedRaiseResponse } from '~~/types/rai
 
 const currentPage = ref(1)
 const maxPage = computed(() => data.value?.totalPages ?? 1)
+const totalCount = computed(() => data.value?.totalCount ?? '')
 
 const { data, status, error } = useFetch<TransformedRaiseResponse>('/api/raises', {
   query: {

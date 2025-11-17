@@ -1,5 +1,5 @@
 <template>
-  <UPage>
+  <UPage class="pb-4 mx-8">
     <UPageHeader title="Home" description="Simulated dashboard home page with readme" />
 
     <UPageBody>
