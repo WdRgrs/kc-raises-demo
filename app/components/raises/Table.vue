@@ -7,6 +7,10 @@
       />
     </ClientOnly>
 
+    <div>
+      Total Items: {{ data.totalCount }}
+    </div>
+
     <div class="flex justify-center border-t border-default pt-4">
       <UPagination
         v-model:page="currentPage"

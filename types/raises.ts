@@ -34,6 +34,7 @@ export interface BaseResposne<T> {
 
 export interface TransformedRaiseResponse {
   totalPages: number
+  total_count?: number
   items: TransformedRaiseItem[]
   status: BaseResposne<never>['status']
 }

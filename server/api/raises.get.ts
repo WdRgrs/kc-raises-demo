@@ -23,6 +23,7 @@ export default defineEventHandler(async (event) => {
 
     return {
       totalPages: Math.ceil(batch1.totalPages / 2),
+      totalCount: batch1.totalCount,
       items: allItems,
       status: batch1.status
     }

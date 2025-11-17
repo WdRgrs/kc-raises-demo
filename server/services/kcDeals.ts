@@ -39,6 +39,7 @@ export async function fetchDeals(page: number): Promise<TransformedRaiseResponse
 
   return {
     totalPages: res.data.total_pages,
+    totalCount: res.data.total_count,
     items: res.data.result.map(transformRaiseData),
     status: res.status
   }
