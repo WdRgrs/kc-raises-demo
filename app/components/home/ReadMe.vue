@@ -25,7 +25,7 @@
       </li>
       <li>
         Create a <code>.env</code> file with your Kingscrowd API key:
-        <pre><code>KC_API_KEY=your_api_key_here</code></pre>
+        <pre><code>NUXT_KC_API_KEY=your_api_key_here</code></pre>
       </li>
       <li>
         Run the development server:

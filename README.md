@@ -25,7 +25,7 @@ A Nuxt 4 application displaying Active Reg CF and Reg A+ fundraising deals from 
 
 3. Create a `.env` file with your Kingscrowd API key:
 ```
-   KC_API_KEY=your_api_key_here
+   NUXT_KC_API_KEY=your_api_key_here
 ```
 
 4. Run the development server:
